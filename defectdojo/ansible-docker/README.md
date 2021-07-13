@@ -27,10 +27,10 @@ will happen once a week and Docker container logs will be sent to `journald`.
 ```yml
 ---
 
-# docker.yml
+# defectdojo_playbook.yml
 
 - name: Example
-  hosts: "all"
+  hosts: "localhost"
   become: true
 
   roles:
@@ -38,11 +38,11 @@ will happen once a week and Docker container logs will be sent to `journald`.
       tags: ["docker"]
 ```
 
-Usage: `ansible-playbook docker.yml`
+Usage: `ansible-playbook docker.yml --ask-become-pass`
 
 ### Installation
 
-`$ ansible-galaxy install televic.docker`
+`$ ansible-galaxy install -r requirements.yml`
 
 ## Default role variables
 

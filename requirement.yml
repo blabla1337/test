@@ -1,0 +1,3 @@
+# Install a role from GitHub
+- name: televic.docker
+  src: https://github.com/blabla1337/test
