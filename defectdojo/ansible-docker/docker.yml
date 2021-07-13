@@ -1,0 +1,7 @@
+- name: Debian Docker
+  hosts: "all"
+  become: true
+
+  roles:
+    - role: "televic.docker"
+      tags: ["docker"]
